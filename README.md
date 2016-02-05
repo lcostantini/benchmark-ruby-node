@@ -18,6 +18,24 @@ puma -e production -t 8:8 ruby.ru
 ```
 
 ## NodeJS
+There are three files in *node* folder, one asynchronously, one synchronously and
+the last one with express.
+To run each one in the node foler
+
+**Asynchronously**
+```
+npm start
+```
+
+**Synchronously**
+```
+npm run sync
+```
+
+**Express**
+```
+npm run express
+```
 
 ## Benchmark tool
 I use the **siege** command (sudo apt-get install siege)
@@ -94,4 +112,4 @@ This results are running against the asynchronously server.
 * 8GB RAM
 * 120GB SSD
 * Ruby 2.2.1
-
+* Node 4.0.0
