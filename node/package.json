@@ -8,7 +8,7 @@
     "sync": "node sync.js",
     "async": "node async.js",
     "express": "node express.js",
-    "test": "siege http://localhost:8090/ -b -r 10 -c 10"
+    "test": "siege http://localhost:9292/ -b -r 10 -c 10"
   },
   "author": "leolower@gmail.com",
   "license": "MIT",

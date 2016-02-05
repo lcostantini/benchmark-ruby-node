@@ -3,7 +3,7 @@ const http = require('http');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 
-const PORT = 8090;
+const PORT = 9292;
 
 if (cluster.isMaster) {
   for (var i = 0; i < numCPUs; i++) {
