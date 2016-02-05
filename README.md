@@ -19,12 +19,30 @@ puma -e production -t 8:8 ruby.ru
 
 ## NodeJS
 
-
-## Benchmark
+## Benchmark tool
 I use the **siege** command (sudo apt-get install siege)
 ```
 siege -b -r 10 -c 10 http://localhost:9292
 ```
+
+# Results
+Here are the results in Ruby and NodeJS
+
+#### Ruby
+* Transactions:                    100 hits
+* Availability:                 100.00 %
+* Elapsed time:                   5.61 secs
+* Data transferred:            7629.39 MB
+* Response time:                  0.55 secs
+* Transaction rate:              17.83 trans/sec
+* Throughput:                  1359.96 MB/sec
+* Concurrency:                    9.78
+* Successful transactions:         100
+* Failed transactions:               0
+* Longest transaction:            0.86
+* Shortest transaction:           0.08
+
+#### Node
 
 ## Where this run
 * Ubuntu 14.04 LTS - 64 bits
@@ -33,21 +51,3 @@ siege -b -r 10 -c 10 http://localhost:9292
 * 120GB SSD
 * Ruby 2.2.1
 
-# Results
-Here are the results in Ruby and NodeJS
-
-## Ruby
-Transactions:                    100 hits
-Availability:                 100.00 %
-Elapsed time:                   5.61 secs
-Data transferred:            7629.39 MB
-Response time:                  0.55 secs
-Transaction rate:              17.83 trans/sec
-Throughput:                  1359.96 MB/sec
-Concurrency:                    9.78
-Successful transactions:         100
-Failed transactions:               0
-Longest transaction:            0.86
-Shortest transaction:           0.08
-
-## Node
