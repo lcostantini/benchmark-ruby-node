@@ -32,6 +32,10 @@ function handleRequest(request, response) {
     if (err) {
       return console.log(err);
     }
-    response.end(new Array(1000).join(data));
+    var res = '';
+    for (var i = 1000 - 1; i >= 0; i--) {
+      res += data;
+    }
+    response.end(data);
   });
 }
