@@ -43,6 +43,49 @@ Here are the results in Ruby and NodeJS
 * Shortest transaction:           0.08
 
 #### Node
+##### 10 concurrent requests from 10 users
+* Transactions:            100 hits
+* Availability:         100.00 %
+* Elapsed time:           0.02 secs
+* Data transferred:         7.63 MB
+* Response time:            0.00 secs
+* Transaction rate:      5000.00 trans/sec
+* Throughput:         381.47 MB/sec
+* Concurrency:           10.00
+* Successful transactions:         100
+* Failed transactions:             0
+* Longest transaction:          0.01
+* Shortest transaction:         0.00
+
+
+##### 100 concurrent requests from 100 users
+* Transactions:          10000 hits
+* Availability:         100.00 %
+* Elapsed time:           1.58 secs
+* Data transferred:       762.94 MB
+* Response time:            0.02 secs
+* Transaction rate:      6329.11 trans/sec
+* Throughput:         482.87 MB/sec
+* Concurrency:           97.99
+* Successful transactions:       10000
+* Failed transactions:             0
+* Longest transaction:          0.08
+
+
+##### 100 concurrent requests from 500 users
+* Transactions:          50000 hits
+* Availability:         100.00 %
+* Elapsed time:           7.10 secs
+* Data transferred:      3814.70 MB
+* Response time:            0.07 secs
+* Transaction rate:      7042.25 trans/sec
+* Throughput:         537.28 MB/sec
+* Concurrency:          495.36
+* Successful transactions:       50000
+* Failed transactions:             0
+* Longest transaction:          0.20
+* Shortest transaction:         0.00
+
 
 ## Where this run
 * Ubuntu 14.04 LTS - 64 bits
