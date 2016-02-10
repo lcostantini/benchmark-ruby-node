@@ -32,10 +32,12 @@ function handleRequest(request, response) {
     if (err) {
       return console.log(err);
     }
-    var res = '';
-    for (var i = 1000 - 1; i >= 0; i--) {
-      res += data;
+
+    var i = 1000;
+    while (i--) {
+      response.write(data);
     }
-    response.end(data);
+
+    response.end();
   });
 }
